@@ -1,13 +1,19 @@
-import { useState } from 'react'
 import './App.css'
+import{ useState , useEffect, use } from 'react'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div className='justify-center flex items-center h-screen text-amber-50'>
-        <h1 className='m-50 p-10 bg-teal-900 border-red-100'>Vite + React</h1>
+      <div className='nav-container vh-100'>
+        <nav className='bg-teal-900 p-4'>
+          <ul className='flex space-x-4 justify-center items-center'>
+            <li><a href="#" className='text-white'>Home</a></li>
+            <li><a href="#" className='text-white'>About</a></li>
+            <li><a href="#" className='text-white'>Contact</a></li>
+          </ul>
+        </nav>
+        <h1 className='text-2xl font-bold text-center mt-4'>Welcome to MicroLearnTracker</h1>
       </div>
     </>
   )
